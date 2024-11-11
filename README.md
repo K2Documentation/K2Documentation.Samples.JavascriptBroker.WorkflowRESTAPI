@@ -2,6 +2,36 @@
 
 This project demonstrates how to interact with the K2 Workflwow REST API through a JSSP Service Type. 
 
+<!-- TOC -->
+* [K2 Workflow REST API Sample project](#k2-workflow-rest-api-sample-project)
+* [Features](#features)
+  * [Getting Started](#getting-started)
+  * [Running Unit Tests](#running-unit-tests)
+  * [Building your bundled JS](#building-your-bundled-js)
+  * [Creating a service type](#creating-a-service-type)
+  * [License](#license)
+  * [Migration from Ava to Vitest](#migration-from-ava-to-vitest)
+    * [1. Installation](#1-installation)
+    * [2. Configuring Vitest](#2-configuring-vitest)
+    * [3. Syntax Differences](#3-syntax-differences)
+      * [Basic Test Structure](#basic-test-structure)
+        * [Ava:](#ava)
+        * [Vitest:](#vitest)
+      * [Assertions](#assertions)
+      * [Test Hooks](#test-hooks)
+      * [Example:](#example)
+        * [Ava:](#ava-1)
+        * [Vitest:](#vitest-1)
+    * [4. Async Tests](#4-async-tests)
+        * [Ava:](#ava-2)
+        * [Vitest:](#vitest-2)
+    * [5. Snapshot Testing](#5-snapshot-testing)
+        * [Vitest:](#vitest-3)
+    * [6. Coverage](#6-coverage)
+    * [7. Running Tests](#7-running-tests)
+    * [8. Notes](#8-notes)
+<!-- TOC -->
+
 # Features
 
   - Sample unit tests with mocks and code coverage.
@@ -43,6 +73,12 @@ Once you have a bundled .js file, upload it to your repository (anonymously
 accessible) and register the service type using the system SmartObject located
 at System > Management > SmartObjects > SmartObjects > JavaScript Service
 Provider and run the Create From URL method.
+
+## License
+
+MIT, found in the [LICENSE](./LICENSE) file.
+
+[www.k2.com](https://www.k2.com)
 
 ## Migration from Ava to Vitest
 
@@ -261,9 +297,3 @@ There are some key differences between `ava` and `vitest`:
   keep to the defaults for familiarity.
 
 ---
-
-## License
-
-MIT, found in the [LICENSE](./LICENSE) file.
-
-[www.k2.com](https://www.k2.com)
